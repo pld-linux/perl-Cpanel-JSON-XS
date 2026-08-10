@@ -8,7 +8,7 @@ Summary:	Cpanel::JSON::XS - cPanel fork of JSON::XS, fast and correct serializin
 Summary(pl.UTF-8):	Cpanel::JSON::XS - fork cPanel modulu JSON::XS, szybka i poprawna serializacja
 Name:		perl-Cpanel-JSON-XS
 Version:	4.40
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
