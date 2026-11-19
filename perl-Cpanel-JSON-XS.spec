@@ -2,13 +2,18 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 
+%ifarch x32
+# t/122_type_encode.t: allow_bignum with JSON_TYPE_FLOAT prints a 64-bit integer in exponent form
+%undefine	with_tests
+%endif
+
 %define	pdir	Cpanel
 %define	pnam	JSON-XS
 Summary:	Cpanel::JSON::XS - cPanel fork of JSON::XS, fast and correct serializing
 Summary(pl.UTF-8):	Cpanel::JSON::XS - fork cPanel modulu JSON::XS, szybka i poprawna serializacja
 Name:		perl-Cpanel-JSON-XS
 Version:	4.82
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
